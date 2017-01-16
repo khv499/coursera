@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment 2</title>
+<style>
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  background-color: honeydew;
+  
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  margin-top: 5%;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: dodgerblue;
+}
+section {
+  border: 4px solid black;
+  background-color: #99ff66;
+  width: 90%;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+  position:relative;
+  margin-top: 25%;
+  padding-left: 1%;
+  color: darkblue;
+}
+p {
+  border: 4px solid black;
+  background-color: #ff66ff;
+  width: 33%;
+  height:20%;
+  float: right;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: black;
+  margin-top: auto;
+  border-top: none;
+  border-right: none;
+  text-align: center;
+}
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Desktops **********/
+@media (min-width: 992px) {
+  .col-d-1 {
+    float: left;
+  }
+  .col-d-1 {
+    width: 33.33%;
+  }
+}
+/********** Tablets **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-t-2,.col-t-3 {
+    float: left;
+  }
+  .col-t-2 {
+    width: 50%;
+  }
+  .col-t-3 {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Famous Quotes By Indian Captains(Cricket)</h1>
+
+<div class="row">
+  <div class="col-d-1 col-t-2"><section><p>Ms Dhoni</p><br><br>I am on national duty, Everything else can wait.</section></div>
+  <div class="col-d-1 col-t-2"><section><p>Ganguly</p><br><br>People will support you, people will criticize you. When you cross that rope everthing is about you.</section></div>
+  <div class="col-d-1 col-t-3"><section><p>Kapil Dev</p><br><br>The next generation has always been and will be better than the previous one. If it is not, then the world would not be moving forward.</section></div>
+</div>
+
+</body>
+</html>
